@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная страница</title>
+    <link href="{{ url_for('static', path='/main_apge.css') }}" rel="stylesheet">
+</head>
+<body>
+<div class="modal">
+    <form name="test" method="post" action='/inter_user_analyzez'>
+        <h2>Вход в профиль </h2>
+        <input name='login' placeholder="login"><br>
+        <input name='password' type="password" placeholder="password"><br>
+        <h2></h2>
+        <input type="submit" value="Войти">
+    </form>
+</div>
+
+
+</body>
+</html>

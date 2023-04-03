@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Анализ профиля</title>
+    <link href="{{ url_for('static', path='/main_apge.css') }}" rel="stylesheet">
+</head>
+<body>
+<div class="modal">
+    <form name="test" method="post" action='/posts'>
+
+        <h1 >Анализ профиля</h1>
+        <input type="hidden" name="access_token" value={{access_token}}>
+        <input name='link' placeholder="link">
+        <input name='quantity' placeholder="quantity post">
+        <h2></h2>
+        <input type="submit" value="Войти">
+    </form>
+</div>
+</body>
+</html>
